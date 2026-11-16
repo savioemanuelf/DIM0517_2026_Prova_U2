@@ -23,6 +23,6 @@ jobs:
       - name: Check
         run: python -m py_compile src/main.py
       - name: build
-        run: docker build -t minha_imagem ./python/.
+        run: docker build -t minha_imagem .
       - name: run
         run: docker run minha_imagem:latest
