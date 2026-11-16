@@ -1,6 +1,9 @@
 name: Python
-
-
+on:
+  push:
+    branches: 
+      - 'feature/**'
+    paths: ["python/src/**", "python/Dockerfile", "python/requirements-dev.txt"]
 jobs:
   build:
     runs-on: ubuntu-latest
