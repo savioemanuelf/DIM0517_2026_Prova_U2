@@ -26,6 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build
-        run: docker build -t minha_imagem .
+        run: docker build -t minha_imagem ./python/
       - name: run
         run: docker run minha_imagem:latest
