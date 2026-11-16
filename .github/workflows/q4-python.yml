@@ -22,12 +22,6 @@ jobs:
 
       - name: Check
         run: python -m py_compile src/main.py
-  docker:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: python
-    steps:
       - name: build
         run: docker build -t minha_imagem ./python/.
       - name: run
